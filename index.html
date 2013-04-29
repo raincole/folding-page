@@ -1,22 +1,112 @@
-<html>
-<head>
-  <style>
-  body {
-    background-color: #333333;
-  }
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  #mainSwf {
-    display: block;
-    margin: 20px auto;
-  }
-  </style>
-</head>
-<body>
+    <meta property="og:title" content="Folding" />
+    <meta property="og:type" content="game" />
+    <meta property="og:url" content="http://raintomorrow.cc/games/folding" />
+    <meta property="og:image" content="http://raincole.github.com/folding/img/og-image.png" />
+    <meta property="og:site_name" content="Folding" />
+    <meta property="og:description" content="A game about simplifying. Could you make the minimalistic world even simpler?" />
 
-  <object id="mainSwf" width="640" height="480">
-    <param name="movie" value="Main.swf" />
-    <embed src="Main.swf" width="640" height="480" />
+    <link rel="canonical" href="http://raintomorrow.cc/games/folding"/>
+    <link rel="shortcut icon" href="http://raincole.github.com/folding/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+
+    <title>Folding</title>
+
+    <script type="text/javascript">
+      // Redirect Github Page to my own domain
+      if (window.location.href.indexOf('http://raincole.github') === 0) {
+          window.location.href = 'http://raintomorrow.cc/games/folding';
+      }
+    </script>
+
+    <style type="text/css">
+    <!--
+    body {
+      font-family: Helvetica, Verdana, Arial, sans-serif;
+      background-color: white;
+      background-image: url(http://raincole.github.io/folding-page/img/background.png);
+      color: black;
+      text-align: center;
+    }
+    a:link, a:visited {
+      color: #000;
+    }
+    a:active, a:hover {
+      color: #666;
+    }
+    header {
+      margin: 20px;
+      font-size: 48px;
+      font-weight: bold;
+      font-family: 'Nova Square', cursive;
+    }
+    p.footer {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    div.content {
+      margin: auto;
+      width: 640px;
+    }
+    div.missing {
+      margin: auto;
+      position: relative;
+      top: 50%;
+      width: 193px;
+    }
+    div.missing a {
+      height: 63px;
+      position: relative;
+      top: -31px;
+    }
+    div.missing img {
+      border-width: 0px;
+    }
+    table.manual {
+      margin: auto;
+      border-collapse: collapse;
+    }
+    table.manual td {
+      padding: 5px 15px;
+      font-size: 20px;
+      border: 1px solid #CCC;
+    }
+    table.manual td.description {
+      font-size: 16px;
+    }
+    -->
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+
+    <header>Folding</header>
+
+    <div class="content">
+
+<object id="mainSwf" width="640" height="480">
+    <param name="movie" value="http://raincole.github.io/folding-page/Main.swf" />
+    <embed src="http://raincole.github.io/folding-page/Main.swf" width="640" height="480" />
   </object>
 
-</body>
+    </div>
+    <p>
+      <table class="manual">
+        <tr><td>Mouse Click</td><td class="description">select</td></tr>
+        <tr><td>W, A, S, D</td><td class="description">rotate</td></tr>
+      </table>
+    </p>
+    <p class="footer">
+      &laquo;
+      Created by <a target="_blank" href="http://raintomorrow.cc" title="Raincole">Raincole</a>,
+      Powered by <a target="_blank" href="http://haxepunk.com/" title="Go to haxepunk.com">HaxePunk,</a>
+      For <a target="_blank" href="http://www.ludumdare.com/compo/ludum-dare-26/" title="Ludum Dare 26">Ludum Dare 26</a>
+      &raquo;<br/>
+    </p>
+
+  </body>
 </html>
